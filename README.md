@@ -1,6 +1,6 @@
 # custom-ui
 
-[![NPM Version](https://img.shields.io/npm/v/start-ui)](https://www.npmjs.com/package/start-ui)
+[![NPM Version](https://img.shields.io/npm/v/react-start-kit)](https://www.npmjs.com/package/react-start-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Custom UI library built with React, Radix UI, Tailwind CSS v4, and TypeScript.
@@ -16,7 +16,7 @@ Custom UI library built with React, Radix UI, Tailwind CSS v4, and TypeScript.
 ## Installation
 
 ```bash
-npm install start-ui
+npm install react-start-kit
 ```
 
 ## Setup
@@ -24,7 +24,7 @@ npm install start-ui
 To use the styles, import the CSS file in your root entry file (e.g., `main.tsx`, `App.tsx`, or `index.js`).
 
 ```tsx
-import 'start-ui/dist/start-ui.css';
+import 'react-start-kit/dist/react-start-kit.css';
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ import 'start-ui/dist/start-ui.css';
 Import components directly from the package:
 
 ```tsx
-import { Button } from 'start-ui';
+import { Button } from 'react-start-kit';
 
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
 You can also import specific components to optimize bundle size:
 
 ```tsx
-import { Alert, AlertTitle, AlertDescription } from 'start-ui/alert';
+import { Alert, AlertTitle, AlertDescription } from 'react-start-kit/alert';
 
 <Alert>
   <AlertTitle>Heads up!</AlertTitle>

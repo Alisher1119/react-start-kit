@@ -1,5 +1,5 @@
 /**
- * @fileoverview Main entry point for the start-ui library.
+ * @fileoverview Main entry point for the react-start-kit library.
  * Exports all UI components and utility functions.
  */
 

@@ -1,19 +1,19 @@
 {
-  "name": "start-ui",
+  "name": "react-start-kit",
   "version": "1.0.0",
   "description": "Custom ui library using React.js, Shadcn/ui, TailwindCSS, Typescript",
   "keywords": [
     "shadcn/ui",
     "styled-components",
     "tailwindcss@4",
-    "start-ui",
+    "react-start-kit",
     "ui-lib",
     "react.js",
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alisher1119/start-ui.git"
+    "url": "git+https://github.com/Alisher1119/react-start-kit.git"
   },
   "license": "MIT",
   "author": "alisher1119",
