@@ -170,9 +170,9 @@ export const ReactSelect = ({
             className={twMerge(
               props.className,
               className,
-              '!border-border-alpha-strong focus-within:!ring-offset-bg focus-within:!ring-item-primary !min-h-10 !rounded-lg !bg-transparent !ring-0 !outline-none focus-within:!ring-2 focus-within:!ring-offset-2',
+              'border-border-alpha-strong! focus-within:ring-offset-bg! focus-within:ring-item-primary! min-h-10! rounded-lg! bg-transparent! ring-0! outline-none! focus-within:ring-2! focus-within:ring-offset-2!',
               error &&
-                'focus-within:!ring-item-destructive placeholder:!text-item-destructive !border-item-destructive !text-item-destructive'
+                'focus-within:ring-item-destructive! placeholder:text-item-destructive! border-item-destructive! text-item-destructive!'
             )}
           />
         </div>
@@ -186,7 +186,7 @@ export const ReactSelect = ({
       ) => (
         <components.Menu
           {...props}
-          className={twMerge([props.className, '!bg-bg-secondary'])}
+          className={twMerge([props.className, 'bg-bg-secondary!'])}
         />
       ),
       Option: ({
@@ -200,7 +200,7 @@ export const ReactSelect = ({
           {...props}
           className={twMerge([
             props.className,
-            (props.isSelected || props.isFocused) && '!bg-bg',
+            (props.isSelected || props.isFocused) && 'bg-bg!',
           ])}
         />
       ),
@@ -231,7 +231,7 @@ export const ReactSelect = ({
           {...props}
           className={twMerge([
             props.className,
-            'text-body-sm-regular !text-primary',
+            'text-body-sm-regular text-primary!',
           ])}
         />
       ),
@@ -246,7 +246,7 @@ export const ReactSelect = ({
           {...props}
           className={twMerge([
             props.className,
-            'text-body-sm-regular !rounded-md border-blue-200 !bg-blue-100 !py-0 !text-blue-700',
+            'text-body-sm-regular border-item-primary bg-item-primary! rounded-md! py-0! text-white!',
           ])}
         />
       ),
@@ -259,7 +259,7 @@ export const ReactSelect = ({
       ) => (
         <components.Input
           {...props}
-          className={twMerge([props.className, '!text-primary'])}
+          className={twMerge([props.className, 'text-primary!'])}
         />
       ),
     };

@@ -52,6 +52,7 @@ function App() {
       </Label>
       <Input placeholder={'123'} />
       <ReactSelect
+        isMulti
         placeholder={'123'}
         options={[
           {
