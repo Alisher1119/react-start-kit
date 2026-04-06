@@ -1,6 +1,6 @@
 # custom-ui
 
-[![NPM Version](https://img.shields.io/npm/v/universal-ui)](https://www.npmjs.com/package/universal-ui)
+[![NPM Version](https://img.shields.io/npm/v/start-ui)](https://www.npmjs.com/package/start-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Custom UI library built with React, Radix UI, Tailwind CSS v4, and TypeScript.
@@ -16,7 +16,7 @@ Custom UI library built with React, Radix UI, Tailwind CSS v4, and TypeScript.
 ## Installation
 
 ```bash
-npm install universal-ui
+npm install start-ui
 ```
 
 ## Setup
@@ -24,7 +24,7 @@ npm install universal-ui
 To use the styles, import the CSS file in your root entry file (e.g., `main.tsx`, `App.tsx`, or `index.js`).
 
 ```tsx
-import 'universal-ui/dist/universal-ui.css';
+import 'start-ui/dist/start-ui.css';
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ import 'universal-ui/dist/universal-ui.css';
 Import components directly from the package:
 
 ```tsx
-import { Button } from 'universal-ui';
+import { Button } from 'start-ui';
 
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
 You can also import specific components to optimize bundle size:
 
 ```tsx
-import { Alert, AlertTitle, AlertDescription } from 'universal-ui/alert';
+import { Alert, AlertTitle, AlertDescription } from 'start-ui/alert';
 
 <Alert>
   <AlertTitle>Heads up!</AlertTitle>

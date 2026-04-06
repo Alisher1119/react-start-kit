@@ -1,5 +1,5 @@
 /**
- * @fileoverview Main entry point for the universal-ui library.
+ * @fileoverview Main entry point for the start-ui library.
  * Exports all UI components and utility functions.
  */
 

@@ -1,19 +1,19 @@
 {
-  "name": "universal-ui",
+  "name": "start-ui",
   "version": "1.0.0",
   "description": "Custom ui library using React.js, Shadcn/ui, TailwindCSS, Typescript",
   "keywords": [
     "shadcn/ui",
     "styled-components",
     "tailwindcss@4",
-    "universal-ui",
+    "start-ui",
     "ui-lib",
     "react.js",
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alisher1119/universal-ui.git"
+    "url": "git+https://github.com/Alisher1119/start-ui.git"
   },
   "license": "MIT",
   "author": "alisher1119",
