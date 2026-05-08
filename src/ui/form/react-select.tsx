@@ -287,7 +287,7 @@ export const ReactSelect = ({
           );
           setSelectedValue(values as Option[]);
         } else {
-          onChange((values as Option)?.value || null, actionMeta);
+          onChange((values as Option)?.value ?? null, actionMeta);
           setSelectedValue(values as Option);
         }
       }}
