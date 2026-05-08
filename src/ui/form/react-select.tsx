@@ -126,7 +126,7 @@ export const ReactSelect = ({
           null
       );
     } else {
-      setSelectedValue(computedProps.value || null);
+      setSelectedValue(computedProps.value ?? null);
     }
   }, [JSON.stringify([computedProps.value, computedOptions])]);
 
