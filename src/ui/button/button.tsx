@@ -1,6 +1,6 @@
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { forwardRef } from 'react';
+import { forwardRef, type ReactNode } from 'react';
 import { cn } from '../../lib';
 
 /**
@@ -56,6 +56,14 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  /**
+   * Icon rendered before the button's children. Ignored when `asChild` is
+   * true (Radix `Slot` requires a single child element; put the icon inside
+   * that child yourself in that case).
+   */
+  iconLeading?: ReactNode;
+  /** Icon rendered after the button's children. Ignored when `asChild` is true. */
+  iconTrailing?: ReactNode;
 }
 
 /**
@@ -68,6 +76,8 @@ export interface ButtonProps
  * @param {'default' | 'destructive' | 'secondary' | 'tertiary' | 'ghost'} [props.variant] - Style variant.
  * @param {'lg' | 'default' | 'sm' | 'xs' | 'icon'} [props.size] - Button size.
  * @param {boolean} [props.asChild=false] - Whether to use `Slot` instead of `button` element.
+ * @param {ReactNode} [props.iconLeading] - Icon rendered before the children. Ignored when `asChild` is true.
+ * @param {ReactNode} [props.iconTrailing] - Icon rendered after the children. Ignored when `asChild` is true.
  * @param {React.Ref<HTMLButtonElement>} ref - Forwarded ref for DOM access.
  * @returns {JSX.Element} Rendered button element.
  *
@@ -75,17 +85,40 @@ export interface ButtonProps
  * ```tsx
  * <Button variant="destructive" size="sm">Delete</Button>
  * <Button asChild><a href="/next-step">Continue</a></Button>
+ * <Button iconLeading={<PlusIcon />}>Add</Button>
  * ```
  */
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  (
+    {
+      className,
+      variant,
+      size,
+      asChild = false,
+      iconLeading,
+      iconTrailing,
+      children,
+      ...props
+    },
+    ref
+  ) => {
     const Comp = asChild ? Slot : 'button';
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      />
+      >
+        {asChild ? (
+          children
+        ) : (
+          <>
+            {iconLeading}
+            {children}
+            {iconTrailing}
+          </>
+        )}
+      </Comp>
     );
   }
 );
