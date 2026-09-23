@@ -1,6 +1,6 @@
 {
   "name": "react-start-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Custom ui library using React.js, Shadcn/ui, TailwindCSS, Typescript",
   "keywords": [
     "shadcn/ui",
